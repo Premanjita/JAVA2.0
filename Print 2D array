@@ -1,0 +1,25 @@
+public class Print2DArray {
+    public static void main(String[] args) {
+        // Define a 2D array
+        int[][] array = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        };
+
+        // Call the method to print the 2D array
+        print2DArray(array);
+    }
+
+    // Method to print the 2D array using enhanced for loop
+    public static void print2DArray(int[][] arr) {
+        // Loop through each row using enhanced for loop
+        for (int[] row : arr) {
+            // Loop through each element in the row
+            for (int element : row) {
+                System.out.print(element + " "); // Print each element
+            }
+            System.out.println(); // Move to the next line after printing one row
+        }
+    }
+}
